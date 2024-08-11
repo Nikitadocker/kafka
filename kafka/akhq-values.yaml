@@ -1,0 +1,9 @@
+secrets:
+  akhq:
+    connections:
+      my-kafka-cluster:
+        properties:
+          bootstrap.servers: my-cluster-kafka-bootstrap:9092
+          security.protocol: SASL_PLAINTEXT
+          sasl.mechanism: SCRAM-SHA-512
+          sasl.jaas.config: org.apache.kafka.common.security.scram.ScramLoginModule required username="akhq" password="cN3p3opeaX4eOt66NBKJOR0efbbGGU5b";
